@@ -1,0 +1,648 @@
+.App {
+  text-align: center;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  position: static;
+  background-color:#388e3c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand {
+  font-size: 3rem; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+  border-radius: 15%;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 15%;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #388e3c; 
+  color: #fff; 
+  padding-top: 20px;
+  text-align: center;
+  height: 50px; 
+  margin-bottom: 0%;
+}
+
+
+.signup-login-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  background-color: rgb(255, 255, 255);
+  padding: 1rem; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 800px;
+  height: 600px; 
+  margin-bottom: 200px;
+  margin-top: 20%;
+}
+
+.signup-login-container label {
+  text-align: center; 
+  padding: 0.5rem 0;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+}
+
+.signup-login-container input {
+  align-items: center;
+  margin: 1rem 0; 
+  padding: 1rem;
+  border: 2px solid #33333393; 
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  transition: all 0.3s ease;
+  width: 100%; 
+  box-sizing: border-box; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+.signup-container input:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.errormsg {
+  color: red;
+}
+
+.signup-login-wrap {
+  background-color: #f2f2f2; 
+  padding-top: 10%; 
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 10%;
+}
+
+
+.signup-login-button {
+  display: inline-block;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50; 
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.signup-login-button:hover {
+  background-color: #388e3c; 
+}
+
+.divider {
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0; 
+}
+
+.signup-h1 {
+  padding-left: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signup-container label {
+  padding: 0.5rem 0;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+}
+
+.signup-container input {
+
+  margin: 1rem 0; 
+  padding: 1rem;
+  border: 2px solid #33333393; 
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  transition: all 0.3s ease;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+
+.control-label {
+image-resolution:50;
+}
+
+
+.profile-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #9ded93;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+}
+
+.profile-content {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.profile-img {
+  margin-left: 205px; 
+}
+
+.profile-img img {
+  width: 150px; 
+  height: auto; 
+
+}
+
+.profile-info {
+  flex-grow: 1; 
+}
+
+.profile-info {
+  padding-bottom: 10px;
+}
+
+.profile-actions button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-action-edit {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.profile-edit input{
+  margin: 1rem 0; 
+  padding: 1rem;
+  border: 2px solid #33333393; 
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  transition: all 0.3s ease;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.profile-action-delete {
+  background-color: #ed2121;
+  color: #fff;
+  float:  right;
+}
+
+.profile-actions button:hover {
+  background-color: #66686b;
+}
+
+.profile-date {
+  font-style: italic;
+  color: #666;
+}
+
+.profile-container {
+  background-color: #f2f2f2; 
+  padding-top: 10%; 
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 20%;
+  
+}
+
+
+.banner {
+  position: relative;
+  width: 100%; 
+  height: 90%;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.main-content {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.main-content h2{
+  color: #414346;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content p {
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 24px;
+  position: static;
+  z-index: auto;
+  font-family: Arial, sans-serif;
+  color:rgb(95, 92, 92);
+}
+
+.main-content {
+  padding-bottom: 100px;
+}
+
+.main-content ul {
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 24px;
+  position: static;
+  z-index: auto;
+  font-family: Arial, sans-serif;
+  color:rgb(95, 92, 92);
+  }
+
+/* CSS FOR /Tips and Components */ 
+.vegetable-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.vegetable-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vegetable-button img {
+  width: 200px;
+  height: 200px;
+}
+
+.vegetable-name {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.vegetable-grid img {
+  width: 200;
+  height: 200;
+}
+
+.tips-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.tips-heading {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+/* CSS for Shopping Cart and Product Displays */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.product img {
+  height: 50%;
+  width: 100%;
+}
+
+.product button {
+  margin: 5px;
+  display: inline-block;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50; 
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shopping-container {
+  text-align: center;
+}
+
+.shopping-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.shopping-cart {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* CSS for /Checkout and included Components */
+.checkout-section {
+  margin-top: 20px;
+}
+
+.total-price {
+  font-size: 20px;
+}
+
+.checkout-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  display: inline-block;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e41705; 
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-cart {
+  margin: 50%;
+}
+
+.checkout-container {
+  text-align: center;
+}
+
+.checkout-content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.summary-bold {
+  font-weight: bold;
+}
+
+.checkout-form label {
+  text-align: center; 
+  padding: 0.5rem 0;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+
+}
+
+.checkout-form input {
+  align-items: center;
+  margin: 1rem 0; 
+  padding: 1rem;
+  border: 2px solid #33333393; 
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: all 0.3s ease;
+  width: 100%; 
+  box-sizing: border-box; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  background-color: rgb(243, 231, 231);
+  padding: 1rem; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 600px; 
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.confirmation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.confirmation-container h1,
+.confirmation-container p,
+.confirmation-container .summary-container {
+  margin: 15px;
+}
+
+.confirmation-text {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* CSS for /Specials and included Components */
+.Orig-Price {
+  text-decoration: line-through;
+}
+
+.New-Price {
+  color: red;
+}
+
+.login-button {
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50; 
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 100px;
+}
+
+.width {
+  width: 300px;
+}
+
+
+.login-here {
+  margin-left: 50px;
+}
+
+.review-container {
+  width: 80%;
+  margin-top: 20%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #388e3c9e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+legend {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="button"].btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+input[type="submit"].btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.reviews-section {
+  margin-top: 40px;
+}
+
+.review-card {
+  background-color: #b7e1d1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.899);
+  
+}
+
+.review-card h6 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.review-text {
+  font-size: 1em;
+  color: #555;
+}

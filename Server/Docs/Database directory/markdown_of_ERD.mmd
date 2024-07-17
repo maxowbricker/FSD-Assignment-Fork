@@ -1,0 +1,79 @@
+erDiagram
+    USER one to many ORDERS : places
+    USER one to many REVIEWS : writes
+
+    CART one to many CART_PRODUCTS : adds
+
+    
+    ORDERS one to zero or many ORDER_ITEMS : contains
+    PRODUCT one to many ORDER_ITEMS : contains
+    PRODUCT one to many CART_PRODUCTS : contains
+
+    REVIEWS many to one PRODUCT : has
+    SPECIALS zero or one to one PRODUCT : contains
+
+    USER one to one CART : belongs_to
+
+
+    CART_PRODUCTS {
+        int Cart_product_id PK
+        int Cart_id FK
+        int ProductID FK   
+        int Quantity
+        decimal Price 
+
+    }
+
+
+    USER {
+        string Email(username) PK
+        string Password "hashed"
+        string Fullname
+        string Address
+    }
+
+    PRODUCT {
+        int ProductID PK
+        string ProductName
+        string Category "e.g fruit or veg"
+        decimal Price
+        int StockQuantity
+        string Description
+    }
+
+
+    ORDERS {
+        int OrderID PK
+        string Email_(username) PK
+        decimal TotalAmount
+    }
+
+    ORDER_ITEMS {
+        int OrderDetailID PK
+        int OrderID FK
+        int ProductID FK
+        int Quantity
+        decimal Price
+    }
+
+    CART    {
+        int Cart_id PK
+        string Email_(username) FK 
+        int Qauntity 
+        decimal TotalAmount
+    }
+
+    REVIEWS {
+        int ReviewID PK
+        int ProductID FK
+        string Email_(username) FK
+        int Rating "e.g 1-5"
+        string Comment
+    }
+
+    SPECIALS {
+        int ID PK
+        int ProductID FK
+        decimal OriginalPrice
+        decimal SpecialPrice
+    }
