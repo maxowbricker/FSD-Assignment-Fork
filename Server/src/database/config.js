@@ -1,5 +1,4 @@
 module.exports = {
-  // dont touch host 
   HOST: "rmit.australiaeast.cloudapp.azure.com",
   // your username to log in goes here
   USER: "sXXXXXXX_fsd_a2",
