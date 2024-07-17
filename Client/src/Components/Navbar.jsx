@@ -14,9 +14,6 @@ function Navbar(props) {
         <li className="nav-item">
           <Link className="nav-link" to="/Shopping">Shopping</Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/Vreview">Reviews</Link>
-        </li>
         {!isLoggedIn && (
           <>
             <li className="nav-item">

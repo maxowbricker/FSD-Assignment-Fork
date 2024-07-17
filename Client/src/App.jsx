@@ -11,8 +11,6 @@ import Footer from './Components/Footer';
 import Home from './pages/Home';
 import { getUser, setUser as setLocalStorageUser, removeUser } from './data/repositoryapi';
 import Signup from "./pages/Signup";
-import Review from "./pages/Review";
-import Vreview from "./pages/Vreview";
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -44,8 +42,6 @@ function App() {
           <Route path="/Shopping/Checkout" element={<Checkout/>} />
           <Route path="/Specials" element={<Specials/>} />
           <Route path="/Signup" element={<Signup loginUser={loginUser}/>} />
-          <Route path="/Review" element={<Review user={user}/>} />
-          <Route path="/VReview" element={<Vreview/>} />
         </Routes>
        
       </Router>
