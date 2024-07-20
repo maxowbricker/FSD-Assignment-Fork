@@ -56,7 +56,7 @@ SOIL is a long-term organic food grocer with several store locations around Melb
 - **Database**: Cloud MySQL
 
 ## Screenshots
-[Screenshots](google.com)
+[Screenshots](https://docs.google.com/document/d/11Emcymn0s-1uubmTwI3J3mycLLzaUswJ8cMOvimghbk/edit?usp=sharing)
 
 ## Setup Instructions
 
